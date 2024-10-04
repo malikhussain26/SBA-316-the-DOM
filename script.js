@@ -1,11 +1,8 @@
 console.log('rock, paper, scissors')
 
-const rockButton = document.getElementById('rock');
-const paperButton = document.getElementById('paper');
-const scissorsButton = document.getElementById('scissors');
-
-const resultSection = document.getElementById('result');
-
-rockButton.addEventListener('click', () => playRound('rock'));
-paperButton.addEventListener('click', () => playRound('paper'));
-scissorsButton.addEventListener('click', () => playRound('scissors'));
+const gameForm = document.getElementById('game-form');
+const resultSection = document.getElementById('result')
+const scoreBoard = document.querySelector('#score-board');
+const winsElement = document.getElementById('wins');
+const lossesElement = document.getElementById('losses');
+const tiesElement = document.getElementById('ties');
