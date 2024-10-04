@@ -10,14 +10,23 @@
 <body>
   <div class="game-container">
     <h1>Rock - Paper - Scissors</h1>
-    <form action="" id="game-form">
+    <form id="game-form">
       <input type="radio" name="choice" id="rock" value="rock">
+      <label for="rock">Rock</label>
       <input type="radio" name="choice" id="paper" value="paper">
+      <label for="paper">Paper</label>
       <input type="radio" name="choice" id="scissors" value="scissors">
+      <label for="scissors">Scissors</label>
+      <button type="submit">Play</button>
     </form>
 
     </div>
     <div id="result"></div>
+    <div id="score-board">
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+      <p>Ties: <span id="ties">0</span></p>
+    </div>
   </div>
 </body>
 </html>
