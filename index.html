@@ -1,123 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBA 316 The DOM</title>
-    <script defer src="./script.js"></script>
-    <link rel="stylesheet" href="./styles.css">
-
-    <style>
-        img {
-            width: 150px;
-            height: 150px;
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBA 316 The DOM</title>
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section class="main_container">
-        <header>
-        <h1 id="title">Malik's Meal Prep Blog</h1>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#recipes">Recipes</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#member">Become a Member</a></li>
-            <li><input type="text" placeholder="Search"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /></li> 
-         </ul>
-    </header>
-    <section id="main_content">
-        <h2>Browse Recipes</h2>
-        <form action="#">
-            <label>Choose Type of Recipe</label>
-            <select name="food_drink">
-                <option value="entree">Main Entrees</option>
-                <option value="drink">Drink Recipes</option>
-                <option value="dessert">Dessert Recipes</option>
-            </select>
-        </form>
-       
-       <section id="cards">
-        <div class="card-body">
-            <div class="img_container">
-              <img src="https://loseweighteatpizza.com/wp-content/uploads/2023/03/high-protein-mac-and-cheese-4-1024x683.jpg" alt="mac-and-cheese" 150x150>
-            </div>
-            <h3>High Protein Mac and Cheese</h3>
-            <p style="color: #33415c; font-size: 20px;">Craving a comforting bowl of mac and cheese? This healthier version satisfies your cravings without compromising on protein. Packed with lean ground turkey or chicken, this mac and cheese is creamy and cheesy, just like the classic but with a boost of protein. Enjoy it as a hearty main course or a satisfying side dish.</p>
-          </div>
-          <div class="card-body">
-            <div class="img_container">
-              <img src="https://pinchofyum.com/wp-content/uploads/butter-chicken-3-square.jpg" alt="butter_chicken" 150x150>
-            </div>
-            <h3>High Protein Butter Chicken</h3>
-            <p style="color: #33415c; font-size: 20px;">Indulge in the rich flavors of traditional butter chicken without the guilt. This revamped version features tender, protein-packed chicken smothered in a creamy, aromatic sauce, all while keeping the fat content low. The perfect balance of spices and a touch of sweetness will leave you craving more. Serve with a side of brown rice or quinoa for a complete and satisfying meal.</p>
-          </div>
-          <div class="card-body">
-            <div class="img_container">
-              <img src="https://fitfoodiefinds.com/wp-content/uploads/2020/05/grilled-salmon-12.jpg" alt="Salmon" 150x150>
-            </div>
-            <h3>Salmon and Rice Dinner</h3>
-            <p style="color: #33415c; font-size: 20px;">A classic and healthy dinner option, this salmon and rice dish is packed with protein and omega-3 fatty acids. Flaky salmon is grilled or baked to perfection and served alongside a bed of fluffy rice. Pair with a side of roasted vegetables or a simple salad for a complete and nutritious meal.</p>
-          </div>
-          <div class="card-body">
-            <div class="img_container">
-              <img src="https://www.themediterraneandish.com/wp-content/uploads/2024/06/TMD-June-Chicken-Shawarma-Leads-03-Overhead-Horizontal.jpg" alt="Chicken-shawarma-bowl" 150x150>
-            </div>
-            <h3>High Protein Chicken Shawarma Rice Bowl</h3>
-            <p style="color: #33415c; font-size: 20px;">Savor the vibrant flavors of the Middle East with this satisfying chicken shawarma rice bowl. Tender, marinated chicken is grilled to perfection and served alongside fluffy rice, crisp cucumbers, tomatoes, and a creamy tzatziki sauce. A burst of spices and fresh ingredients make this meal a delicious and healthy choice.</p>
-          </div>
-          <div class="card-body">
-            <div class="img_container">
-              <img src="https://www.nourishandtempt.com/wp-content/uploads/2020/02/84706250_161851665248125_7360174580574453760_n.jpg" alt="Breakfast" 150x150>
-            </div>
-            <h3>High Protein Pancake Breakfast</h3>
-            <p style="color: #33415c; font-size: 20px;">Start your day off right with a protein-packed breakfast. Enjoy fluffy pancakes made with protein-rich ingredients like Greek yogurt or protein powder. Top with fresh fruit, a drizzle of honey, or a sprinkle of nuts. Pair your pancakes with a side of scrambled eggs or a protein omelette for a complete and satisfying meal.</p>
-          </div>
-          <div class="card-body">
-            <div class="img_container">
-              <img src="https://www.cookingclassy.com/wp-content/uploads/2022/07/grilled-steak-15-500x375.jpg" alt="steak" 150x150>
-            </div>
-            <h3>Steak and Potato Dinner</h3>
-            <p style="color: #33415c; font-size: 20px;">Indulge in a classic and hearty meal with a steak and potato dinner. A juicy steak, cooked to your preferred doneness, is served alongside roasted or mashed potatoes. Pair with a side of steamed vegetables or a simple salad for a complete and satisfying meal.
-                
-            </p>
-          </div>
-        </section>
-    
-        <footer>
-            <div>
-                <form action="#" class="newsletter">
-                    <label>Newsletter Sign-up</label>
-                    <input type="email" placeholder="Email">
-                </form>
-            </div>
-         
-            <div id="socials">
-               
-                <a href="#" class="text-dark me-2">
-                    <i class="fab fa-facebook-f fa-lg"></i>
-                </a>
-                <a href="#" class="text-dark me-2">
-                    <i class="fab fa-twitter fa-lg"></i>
-                </a>
-                <a href="#" class="text-dark me-2">
-                    <i class="fab fa-instagram fa-lg"></i>
-                </a>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-zRvgC/oG/Z6d6o0/o5c71c6d077777637a4444536593833021b754972614637549705730927430232704316503672613900155713969/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            </div>
-    
-    
-        </footer>
-    
-    
-    </section>
-    
-    
-    
-    
-    
-        <a href="./page2.html" id="next_page">Go to Page 2</a>
-    </section>
+  <div class="game-container">
+    <h1>Rock - Paper - Scissors</h1>
+    <div class="buttons">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+
+    </div>
+    <div id="result"></div>
+  </div>
 </body>
 </html>
