@@ -28,16 +28,33 @@ gameForm.addEventListener('submit', (event) => {
 
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
-    return choices[Math.floor(Math.random() * choices.length)];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    window.alert("The computer Chose: " + computerChoice);
+    return computerChoice;
 
 }
 
 function determineWinner(playerChoice, computerChoice) {
-    // logic to determine winner
+    if (playerChoice === computerChoice) {
+        return "It's a tie!";
+    } else if (
+        (playerChoice === "rock" && computerChoice === "scissors") ||
+        (playerChoice === "paper" && computerChoice === "rock") ||
+        (playerChoice === "scissors" && computerChoice === "paper") ) {
+            return "You win!";z
+        } else {
+            return "You lose!";
+        }
 }
 
 function updateResult(result) {
     resultSection.textContent = result;
+    if (result === 'Win') {
+        window.alert("Congratulations! You Won!")
+    } else if (result === 'Lose') {
+        window.alert("Sorry, you lost. Try again!");
+    }
 }
 
 function updateScore(result) {
@@ -49,3 +66,4 @@ function updateScore(result) {
         tiesElement.textContent = parseInt(tiesElement.textContent) + 1;
     }
 }
+
