@@ -13,9 +13,6 @@ const maxRounds = 3;
 gameForm.addEventListener('submit', (event) => {
     const playerChoiceInput = document.querySelector('input[name="choice"]:checked');
 
-    gameForm.addEventListener('submit', (event) => {
-        event.preventDefault()
-    })
     if (!playerChoiceInput) {
         alert('Please select either Rock, Paper, or Scissors.');
         return;
@@ -27,10 +24,12 @@ gameForm.addEventListener('submit', (event) => {
     updateResult(result);
     updateScore(result);
 
-    roundCount++;
+    if (roundCount < maxRounds) {
+        roundCount++;
+    }
 
     if (roundCount >= maxRounds) {
-        //Determine winner based on the scores
+        //Determine the score based on best of 3.
         const wins = parseInt(winsElement.textContent);
         const losses = parseInt(lossesElement.textContent);
         if (wins > losses) {
@@ -85,3 +84,12 @@ function updateScore(result) {
     }
 }
 
+function disableButtons() {
+    const rockButton = document.getElementById('rock');
+    const paperButton = document.getElementById('paper');
+    const scissorsButton = document.getElementById('scissors');
+    
+    rockButton.setAttribute('disabled', true);
+    paperButton.setAttribute('disabled', true);
+    scissorsButton.setAttribute('disabled', true);
+}
